@@ -1,0 +1,25 @@
+VERSION = 1,
+
+option FactionPower.name
+{
+	type = string,
+	default = ,
+	page = FactionPower,
+	translation = FactionPowerName,
+}
+option FactionPower.PvPForced
+{
+	type = boolean,
+	default = true,
+	page = FactionPower,
+	translation = FactionPowerForcePvPOn,
+}
+option FactionPower.DisplayName
+{
+	type = boolean,
+	default = true,
+	page = FactionPower,
+	translation = FactionPowerDisplayName,
+}
+
+

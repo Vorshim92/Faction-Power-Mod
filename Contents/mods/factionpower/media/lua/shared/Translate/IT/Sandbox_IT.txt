@@ -1,0 +1,6 @@
+Sandbox_IT = {
+	Sandbox_FactionPower = "Faction Power",
+    Sandbox_FactionPowerForcePvPOn = "Enable PvP always for the Faction Power",
+	Sandbox_FactionPowerDisplayName = "Enable Displayname",
+	Sandbox_FactionPowerName = "Nome Fazione con Poteri",
+}

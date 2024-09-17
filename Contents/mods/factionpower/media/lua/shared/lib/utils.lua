@@ -1,6 +1,7 @@
 -- Utils.lua
-Utils = {}
-myUtils = Utils
+local Utils = {}
+
+
 function Utils.getFaction(username, thefaction)
   print("Calling getFaction with username: " .. tostring(username) .. " and faction: " .. tostring(thefaction))
 

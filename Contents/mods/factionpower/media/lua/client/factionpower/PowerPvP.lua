@@ -1,5 +1,5 @@
 -- PowerPvP.lua
-local Utils = require "Utils"
+local utils = require 'lib/Utils'
 local thefaction
 
 local function forcePvP()
@@ -12,7 +12,7 @@ local function forcePvP()
   local username = player:getUsername()
 
   print("Calling forcePvP for user: " .. tostring(username))
-  local faction = Utils.getFaction(username, thefaction)
+  local faction = utils.getFaction(username, thefaction)
   if faction then
     if getSandboxOptions():getOptionByName("FactionPower.PvPForced"):getValue() then
       local old_ISSafetyUI_prerender = ISSafetyUI.prerender
@@ -49,7 +49,7 @@ local function forceDisplayName()
   local username = player:getUsername()
 
   print("Calling forceDisplayName for user: " .. tostring(username))
-  local faction = Utils.getFaction(username, thefaction)
+  local faction = utils.getFaction(username, thefaction)
   if faction then
     if getSandboxOptions():getOptionByName("FactionPower.DisplayName"):getValue() then
       player:setHaloNote(username, 0, 255, 0, 4000)
